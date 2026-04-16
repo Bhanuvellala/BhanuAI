@@ -1,0 +1,10 @@
+{
+  "name": "Bhanu Prakash Reddy — Portfolio",
+  "short_name": "Bhanu.AI",
+  "description": "Applied AI Engineer — Generative AI, LLM systems, and RAG architecture.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080b14",
+  "theme_color": "#080b14",
+  "lang": "en"
+}

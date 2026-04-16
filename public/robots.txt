@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# After you deploy, add your absolute sitemap URL on the line below (recommended for SEO).
+# Sitemap: https://your-production-domain.com/sitemap.xml
