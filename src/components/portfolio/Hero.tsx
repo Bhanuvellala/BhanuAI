@@ -139,7 +139,7 @@ export const Hero = () => {
             <img
               src={profileImg}
               alt={`Portrait of ${profile.fullName}, ${profile.title}`}
-              className="relative z-10 h-full w-full object-cover object-top drop-shadow-[0_18px_45px_hsl(var(--background)/0.9)]"
+              className="relative z-10 h-full w-full object-cover object-top drop-shadow-[0_18px_40px_rgba(15,23,42,0.3)]"
             />
             <div className="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-background via-background/50 to-transparent p-5">
               <div className="flex items-start justify-between gap-3">

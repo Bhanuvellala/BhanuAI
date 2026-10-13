@@ -4,8 +4,8 @@
   "description": "Generative AI engineer working on agentic AI, RAG and LLM systems.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#080b14",
-  "theme_color": "#080b14",
+  "background_color": "#f7f9fc",
+  "theme_color": "#f7f9fc",
   "icons": [
     { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ],

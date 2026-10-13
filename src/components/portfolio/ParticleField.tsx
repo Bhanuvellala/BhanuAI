@@ -17,9 +17,9 @@ export const ParticleField = () => {
       <div className="absolute inset-0 grid-bg opacity-60" />
 
       {/* Glow orbs */}
-      <div className="absolute -top-32 -left-32 h-[500px] w-[500px] rounded-full bg-primary/20 blur-[120px] animate-float-slow" />
-      <div className="absolute top-1/3 -right-32 h-[600px] w-[600px] rounded-full bg-secondary/20 blur-[140px] animate-float-slow" style={{ animationDelay: "5s" }} />
-      <div className="absolute -bottom-32 left-1/3 h-[500px] w-[500px] rounded-full bg-accent/15 blur-[130px] animate-float-slow" style={{ animationDelay: "10s" }} />
+      <div className="absolute -top-32 -left-32 h-[500px] w-[500px] rounded-full bg-[hsl(var(--primary)/var(--orb-alpha))] blur-[120px] animate-float-slow" />
+      <div className="absolute top-1/3 -right-32 h-[600px] w-[600px] rounded-full bg-[hsl(var(--secondary)/var(--orb-alpha))] blur-[140px] animate-float-slow" style={{ animationDelay: "5s" }} />
+      <div className="absolute -bottom-32 left-1/3 h-[500px] w-[500px] rounded-full bg-[hsl(var(--accent)/calc(var(--orb-alpha)*0.75))] blur-[130px] animate-float-slow" style={{ animationDelay: "10s" }} />
 
       {/* Particles */}
       {particles.map((p) => (
