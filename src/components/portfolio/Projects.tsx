@@ -9,10 +9,11 @@ export const Projects = () => {
       <div className="container-premium">
         <SectionHeader
           eyebrow="Projects"
-          title="Generative AI shipped across 6 industries."
+          title="Things I have built and shipped."
         />
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          A selection of production AI systems — RAG platforms, NL→SQL agents, automation copilots and analytics tools.
+          Six systems running in production across content, finance, manufacturing and medical teams. Each one started
+          as somebody doing a slow job by hand.
         </p>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -23,10 +24,13 @@ export const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.55, delay: (idx % 2) * 0.08 }}
-              className="glass tilt-card group relative overflow-hidden rounded-3xl p-7"
+              className="glass card-surface group relative overflow-hidden rounded-3xl p-7"
             >
-              {/* Accent gradient */}
-              <div className={`absolute -right-20 -top-20 h-56 w-56 rounded-full bg-gradient-to-br ${p.accent} opacity-20 blur-3xl transition-opacity group-hover:opacity-40`} />
+              {/* Accent hairline along the top edge */}
+              <div
+                aria-hidden
+                className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r ${p.accent} opacity-40 transition-opacity duration-300 group-hover:opacity-100`}
+              />
 
               <div className="relative flex h-full flex-col">
                 <div className="flex items-start justify-between gap-4">
@@ -57,7 +61,7 @@ export const Projects = () => {
                 </div>
 
                 <div className="mt-5 border-t border-border/60 pt-4 text-xs">
-                  <span className="text-muted-foreground">Impact · </span>
+                  <span className="text-muted-foreground">Result: </span>
                   <span className="font-medium text-foreground">{p.impact}</span>
                 </div>
               </div>

@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <section id="about" className="relative py-28">
       <div className="container-premium">
-        <SectionHeader eyebrow="About" title="Engineer at the intersection of AI & impact." />
+        <SectionHeader eyebrow="About" title="A bit about how I work." />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-[1.3fr_1fr]">
           <motion.div
@@ -33,11 +33,11 @@ export const About = () => {
             className="grid gap-4"
           >
             {[
-              { title: "Production-first", desc: "I build LLM systems that ship — observability, guardrails, latency budgets and all." },
-              { title: "Domain fluency", desc: "Finance, manufacturing, healthcare, HR, IT — I translate business problems into AI." },
-              { title: "Stack purist", desc: "Modern Python, FastAPI, Azure AI Foundry, Semantic Kernel, vector DBs." },
+              { title: "Production first", desc: "A demo is easy. I care about the parts that come after: observability, guardrails, latency budgets." },
+              { title: "Learn the domain", desc: "Finance, manufacturing, healthcare, IT. You cannot model a business problem you have not sat with." },
+              { title: "Boring stack, on purpose", desc: "Python, FastAPI, Azure AI Foundry, Semantic Kernel, a vector DB. Tools I know will hold." },
             ].map((c) => (
-              <div key={c.title} className="glass tilt-card rounded-2xl p-6">
+              <div key={c.title} className="glass card-surface rounded-2xl p-6">
                 <div className="font-display text-lg font-semibold text-gradient">{c.title}</div>
                 <div className="mt-2 text-sm text-muted-foreground">{c.desc}</div>
               </div>

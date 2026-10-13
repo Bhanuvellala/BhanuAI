@@ -18,7 +18,7 @@ export const ChatbotLauncher = () => {
   const [messages, setMessages] = useState<Msg[]>([
     {
       role: "bot",
-      content: `Hi 👋 I'm Bhanu.AI — ask me anything about ${profile.fullName}'s experience, projects, skills or how to work with him.`,
+      content: `Hi, I'm a small demo bot on this site. Ask about ${profile.name}'s experience, projects or skills and I'll point you to the right section.`,
     },
   ]);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -38,7 +38,7 @@ export const ChatbotLauncher = () => {
         {
           role: "bot",
           content:
-            "I'm a lightweight demo on this site — for full answers, browse the sections on this page (experience, projects, skills) or email " +
+            "I'm only a small demo, so I can't answer much. The sections on this page (experience, projects, skills) have the real detail, or you can email " +
             profile.email +
             " directly.",
         },
@@ -95,7 +95,7 @@ export const ChatbotLauncher = () => {
                 </div>
                 <div>
                   <div className="font-display text-base font-semibold text-gradient">Bhanu.AI</div>
-                  <div className="text-[11px] text-muted-foreground">Ask me about Bhanu's work</div>
+                  <div className="text-[11px] text-muted-foreground">Small demo, not a real assistant</div>
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@ export const ChatbotLauncher = () => {
               <input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask Bhanu.AI…"
+                placeholder="Ask about Bhanu's work"
                 className="flex-1 rounded-full border border-border bg-background/60 px-4 py-2 text-sm outline-none transition-colors placeholder:text-muted-foreground/60 focus:border-primary"
               />
               <button

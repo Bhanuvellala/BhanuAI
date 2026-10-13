@@ -37,7 +37,7 @@ export function StructuredData() {
       "@type": "WebSite",
       "@id": `${siteUrl}/#website`,
       url: `${siteUrl}/`,
-      name: `${profile.name} — Portfolio`,
+      name: `${profile.name} Portfolio`,
       description: profile.tagline,
       inLanguage: "en",
     });

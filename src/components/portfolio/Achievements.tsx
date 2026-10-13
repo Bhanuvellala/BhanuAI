@@ -7,7 +7,7 @@ export const Achievements = () => {
   return (
     <section className="relative py-28">
       <div className="container-premium">
-        <SectionHeader eyebrow="Highlights" title="Wins, certifications & signals." />
+        <SectionHeader eyebrow="Highlights" title="Numbers I am proud of." />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {achievements.map((a, idx) => (
@@ -17,7 +17,7 @@ export const Achievements = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: idx * 0.06 }}
-              className="glass tilt-card relative overflow-hidden rounded-3xl p-6"
+              className="glass card-surface card-accent relative overflow-hidden rounded-3xl p-6"
             >
               <div className="grid h-12 w-12 place-items-center rounded-2xl bg-gradient-primary text-primary-foreground shadow-glow">
                 <Award className="h-5 w-5" />

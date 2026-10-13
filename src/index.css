@@ -130,13 +130,39 @@
     mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
   }
 
-  .tilt-card {
-    transform-style: preserve-3d;
-    transition: transform 0.5s var(--transition-spring), box-shadow 0.5s var(--transition-smooth);
+  /* cards: small lift + brighter edge on hover */
+  .card-surface {
+    position: relative;
+    transition: transform 0.35s var(--transition-smooth),
+      border-color 0.35s var(--transition-smooth),
+      box-shadow 0.35s var(--transition-smooth);
   }
-  .tilt-card:hover {
-    transform: perspective(1000px) rotateX(4deg) rotateY(-4deg) translateY(-6px);
-    box-shadow: 0 30px 60px -20px hsl(187 100% 55% / 0.3), 0 20px 40px -10px hsl(270 95% 65% / 0.2);
+  .card-surface:hover {
+    transform: translateY(-4px);
+    border-color: hsl(0 0% 100% / 0.16);
+    box-shadow: 0 22px 48px -24px hsl(230 50% 0% / 0.85), inset 0 1px 0 hsl(0 0% 100% / 0.08);
+  }
+
+  /* accent hairline on the top edge */
+  .card-accent::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    border-radius: inherit;
+    background: var(--gradient-primary);
+    opacity: 0.35;
+    transition: opacity 0.35s var(--transition-smooth);
+  }
+  .card-accent:hover::before {
+    opacity: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card-surface,
+    .card-surface:hover {
+      transform: none;
+    }
   }
 
   .glow-on-hover {
@@ -189,10 +215,9 @@
 .animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
 .animate-fade-up { animation: fade-up 0.8s var(--transition-smooth) both; }
 
-/* Scrollbar */
-::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: hsl(var(--background)); }
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--secondary)));
-  border-radius: 10px;
-}
+/* Scrollbar - hidden but scrolling still works */
+::-webkit-scrollbar { width: 0; height: 0; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: transparent; }
+html { scrollbar-width: none; -ms-overflow-style: none; }
+body { scrollbar-width: none; -ms-overflow-style: none; }

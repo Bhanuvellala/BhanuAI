@@ -27,7 +27,7 @@ export class ErrorBoundary extends Component<Props, State> {
             </div>
             <h1 className="font-display text-2xl font-semibold text-foreground">Something went wrong</h1>
             <p className="mt-2 text-sm text-muted-foreground">
-              The page hit an unexpected error. You can try again — your data is unchanged.
+              Something broke on this page. Try again, nothing you entered was lost.
             </p>
             <button
               type="button"

@@ -7,7 +7,7 @@ export const Experience = () => {
   return (
     <section id="experience" className="relative py-28">
       <div className="container-premium">
-        <SectionHeader eyebrow="Journey" title="Career & education timeline." />
+        <SectionHeader eyebrow="Experience" title="Where I have worked and studied." />
 
         <div className="relative mt-14">
           {/* Vertical line */}
@@ -45,7 +45,7 @@ export const Experience = () => {
                       </div>
                       <ul className={`mt-4 space-y-2 text-sm text-foreground/85 ${isLeft ? "md:text-right" : ""}`}>
                         {e.highlights.map((h, i) => (
-                          <li key={i}>— {h}</li>
+                          <li key={i}>• {h}</li>
                         ))}
                       </ul>
                     </div>

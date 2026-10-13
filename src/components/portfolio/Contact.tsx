@@ -23,13 +23,13 @@ export const Contact = () => {
     const body = encodeURIComponent(`${message}\n\nFrom: ${name} (${email})`);
     window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
     setSent(true);
-    toast.success("Opening your email client…");
+    toast.success("Opening your email client");
   };
 
   return (
     <section id="contact" className="relative py-28">
       <div className="container-premium">
-        <SectionHeader eyebrow="Contact" title="Let's build something great." />
+        <SectionHeader eyebrow="Contact" title="Get in touch." />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-[1fr_1.2fr]">
           {/* Info */}
@@ -41,10 +41,10 @@ export const Contact = () => {
             className="glass rounded-3xl p-8"
           >
             <h3 className="font-display text-2xl font-semibold">
-              Have an idea, role, or AI problem worth solving?
+              Working on something AI shaped?
             </h3>
             <p className="mt-3 text-muted-foreground">
-              I'm open to collaborations on Generative AI products, agent systems and enterprise LLM platforms.
+              Happy to talk about Generative AI products, agent systems or enterprise LLM work. I read everything that comes in.
             </p>
 
             <div className="mt-8 space-y-4 text-sm">
@@ -83,7 +83,7 @@ export const Contact = () => {
               <Field label="Your name" name="name" autoComplete="name" placeholder="Jane Doe" required />
               <Field label="Email" name="email" type="email" autoComplete="email" placeholder="jane@company.com" required />
             </div>
-            <Field label="Subject" name="subject" autoComplete="off" placeholder="AI consulting / role / collab" />
+            <Field label="Subject" name="subject" autoComplete="off" placeholder="What is this about?" />
             <div>
               <label
                 htmlFor="contact-message"
@@ -97,7 +97,7 @@ export const Contact = () => {
                 required
                 rows={5}
                 autoComplete="off"
-                placeholder="Tell me about your project…"
+                placeholder="Tell me about your project"
                 className="w-full resize-none rounded-2xl border border-border bg-background/60 px-4 py-3 text-sm text-foreground outline-none transition-all placeholder:text-muted-foreground/60 focus:border-primary focus:shadow-glow"
               />
             </div>

@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="relative border-t border-border/60 py-10">
       <div className="container-premium flex flex-col items-center justify-between gap-6 text-xs text-muted-foreground md:flex-row">
-        <div>© {new Date().getFullYear()} {profile.fullName}. Crafted with care.</div>
+        <div>© {new Date().getFullYear()} {profile.fullName}</div>
         <nav aria-label="Social" className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
           <a className="transition-colors hover:text-primary" href={profile.linkedin} target="_blank" rel="noopener noreferrer">
             LinkedIn
@@ -21,7 +21,6 @@ export const Footer = () => {
             Email
           </a>
         </nav>
-        <div className="font-mono text-center md:text-right">Built for clarity · impact · velocity.</div>
       </div>
     </footer>
   );

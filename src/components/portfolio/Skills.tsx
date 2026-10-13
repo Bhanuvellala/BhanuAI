@@ -6,7 +6,7 @@ export const Skills = () => {
   return (
     <section id="skills" className="relative py-28">
       <div className="container-premium">
-        <SectionHeader eyebrow="Skills" title="A modern toolkit for shipping intelligent systems." />
+        <SectionHeader eyebrow="Skills" title="What I work with." />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {skills.map((group, idx) => (
@@ -16,9 +16,8 @@ export const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: idx * 0.05 }}
-              className="glass tilt-card group relative overflow-hidden rounded-3xl p-6"
+              className="glass card-surface card-accent group relative overflow-hidden rounded-3xl p-6"
             >
-              <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-primary opacity-10 blur-2xl transition-opacity group-hover:opacity-30" />
               <div className="relative">
                 <div className="font-mono text-[11px] uppercase tracking-widest text-primary">
                   {String(idx + 1).padStart(2, "0")}
