@@ -18,7 +18,8 @@ export const profile = {
   phone: "+91 99850 02532",
   linkedin: "https://www.linkedin.com/in/bhanu-prakash-reddy-vellala-linga",
   github: "https://github.com/Bhanuvellala",
-  personalSite: "https://sites.google.com/view/vellalabhanu/vellala-linga-bhanu-prakash-reddy",
+  /** No personal site right now. Empty hides the Site link in the contact row and footer. */
+  personalSite: "",
   /** Add your public profile URL when ready; left empty so the site does not link to someone else's handle. */
   instagram: "",
   /** Hosted PDF in `public/`. If empty, the Resume control falls back to email. */
