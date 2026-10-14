@@ -4,7 +4,7 @@ import { SectionHeader } from "./About";
 
 export const Skills = () => {
   return (
-    <section id="skills" className="relative py-28">
+    <section id="skills" className="relative py-16 md:py-20">
       <div className="container-premium">
         <SectionHeader eyebrow="Skills" title="What I work with." />
 

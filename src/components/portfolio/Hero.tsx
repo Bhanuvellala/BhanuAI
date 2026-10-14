@@ -127,6 +127,9 @@ export const Hero = () => {
           transition={{ duration: 0.9, delay: 0.2 }}
           className="relative mx-auto hidden w-full max-w-[20rem] lg:block xl:max-w-[22rem]"
         >
+          {/* soft halo so the portrait lifts off the page */}
+          <div className="portrait-halo pointer-events-none absolute inset-0 -m-20 -z-10" aria-hidden="true" />
+
           {/* rings */}
           <div className="absolute inset-0 -m-6 rounded-[2.5rem] border border-primary/20 animate-pulse-glow" />
           <div className="absolute inset-0 -m-12 rounded-[3rem] border border-secondary/15" />

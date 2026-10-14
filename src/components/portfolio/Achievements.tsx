@@ -5,7 +5,7 @@ import { SectionHeader } from "./About";
 
 export const Achievements = () => {
   return (
-    <section className="relative py-28">
+    <section className="relative py-16 md:py-20">
       <div className="container-premium">
         <SectionHeader eyebrow="Highlights" title="Numbers I am proud of." />
 

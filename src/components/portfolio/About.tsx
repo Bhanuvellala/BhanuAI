@@ -3,7 +3,7 @@ import { profile } from "@/data/profile";
 
 export const About = () => {
   return (
-    <section id="about" className="relative py-28">
+    <section id="about" className="relative py-16 md:py-20">
       <div className="container-premium">
         <SectionHeader eyebrow="About" title="A bit about how I work." />
 

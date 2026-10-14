@@ -5,9 +5,9 @@ import { Skills } from "@/components/portfolio/Skills";
 import { Projects } from "@/components/portfolio/Projects";
 import { Experience } from "@/components/portfolio/Experience";
 import { Achievements } from "@/components/portfolio/Achievements";
+import { Certifications } from "@/components/portfolio/Certifications";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
-import { ChatbotLauncher } from "@/components/portfolio/ChatbotLauncher";
 import { StructuredData } from "@/components/StructuredData";
 
 const Index = () => {
@@ -28,9 +28,9 @@ const Index = () => {
         <Projects />
         <Experience />
         <Achievements />
+        <Certifications />
         <Contact />
         <Footer />
-        <ChatbotLauncher />
       </main>
     </>
   );

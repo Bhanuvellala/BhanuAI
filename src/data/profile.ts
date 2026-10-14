@@ -1,3 +1,11 @@
+import certGenAi from "@/assets/cert-genai-microsoft-linkedin.png";
+import certPromptEngineering from "@/assets/cert-prompt-engineering-udemy.png";
+import certDataViz from "@/assets/cert-data-visualization-slu.png";
+import certDataScience from "@/assets/cert-datascience-masterclass-pantech.png";
+import certAppreciation from "@/assets/cert-appreciation-mouritech.png";
+import certDataAnalytics from "@/assets/cert-data-analytics-pantech.png";
+import leaderboard from "@/assets/leaderboard.png";
+
 export const profile = {
   name: "Bhanu Prakash Reddy",
   fullName: "Bhanu Prakash Reddy Vellala Linga",
@@ -263,3 +271,63 @@ export const achievements = [
     detail: "The finance agent writes the query now. Reporting that took hours takes under two minutes.",
   },
 ];
+
+
+export const certifications = [
+  {
+    title: "Career Essentials in Generative AI",
+    issuer: "Microsoft & LinkedIn",
+    date: "Nov 2024",
+    detail: "Learning path on generative AI, applied AI and computer ethics.",
+    image: certGenAi,
+  },
+  {
+    title: "Prompt Engineering for Developers",
+    issuer: "Udemy",
+    date: "Jan 2025",
+    detail: "Prompt design and evaluation patterns for building on top of LLMs.",
+    image: certPromptEngineering,
+  },
+  {
+    title: "Certificate of Appreciation, Q1 2025",
+    issuer: "MOURI Tech",
+    date: "May 2025",
+    detail: "Recognition for exemplary contribution to Advanced Analytics.",
+    image: certAppreciation,
+  },
+  {
+    title: "Data Visualization Virtual Internship",
+    issuer: "Saint Louis University & Excelerate",
+    date: "Sep 2023",
+    detail: "Four-week program turning raw campaign data into reportable dashboards.",
+    image: certDataViz,
+  },
+  {
+    title: "Internship on Data Analytics",
+    issuer: "Pantech Prolabs India",
+    date: "Jan 2024",
+    detail: "Thirty-day applied analytics internship in Python and SQL.",
+    image: certDataAnalytics,
+  },
+  {
+    title: "30 Days Masterclass on Data Science",
+    issuer: "Pantech e-Learning",
+    date: "Apr 2023",
+    detail: "Masterclass covering the data science workflow end to end.",
+    image: certDataScience,
+  },
+];
+
+/**
+ * Six-week competition finish. The screenshot is redacted: the other
+ * participants' photos and names are blurred in the image file itself.
+ */
+export const competition = {
+  title: "3rd place, six-week competition",
+  rank: 3,
+  points: 381,
+  prize: "₹3,000",
+  detail:
+    "Placed third out of the full cohort with 381 points across a six-week competition, and took home a ₹3,000 prize.",
+  image: leaderboard,
+};
