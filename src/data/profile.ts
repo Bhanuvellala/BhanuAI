@@ -28,7 +28,6 @@ export const profile = {
   metrics: [
     { value: "2+", label: "Years in Applied AI" },
     { value: "6", label: "Production AI Apps" },
-    { value: "1M+", label: "Assets Processed" },
     { value: "100+", label: "Business Users Served" },
   ],
 };

@@ -109,7 +109,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55 }}
-            className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4"
+            className="mt-8 grid grid-cols-3 gap-3"
           >
             {profile.metrics.map((m) => (
               <div key={m.label} className="glass rounded-2xl px-3 py-3 text-center">
