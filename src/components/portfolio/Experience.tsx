@@ -53,6 +53,21 @@ export const Experience = () => {
             </span>
           </div>
 
+          {featured.department || featured.practice ? (
+            <div className="mt-3 flex flex-wrap gap-2">
+              {featured.department ? (
+                <span className="rounded-full border border-border bg-muted/50 px-3 py-1 text-xs text-foreground/80">
+                  {featured.department}
+                </span>
+              ) : null}
+              {featured.practice ? (
+                <span className="rounded-full border border-border bg-muted/50 px-3 py-1 text-xs text-foreground/80">
+                  {featured.practice} practice
+                </span>
+              ) : null}
+            </div>
+          ) : null}
+
           <ul className="mt-6 grid gap-3 text-sm leading-relaxed text-foreground/85 md:grid-cols-2 md:gap-x-8">
             {featured.highlights.map((h) => (
               <li key={h} className="flex gap-2.5">

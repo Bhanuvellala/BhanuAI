@@ -9,7 +9,7 @@ import leaderboard from "@/assets/leaderboard.png";
 export const profile = {
   name: "Bhanu Prakash Reddy",
   fullName: "Bhanu Prakash Reddy Vellala Linga",
-  title: "Generative AI Engineer",
+  title: "Technical Consultant",
   subtitle: "Agentic AI, RAG and LLM systems",
   tagline:
     "I build enterprise AI that actually ships: LLM agents, multi-agent systems and RAG pipelines that let people ask questions of their own company data.",
@@ -151,13 +151,27 @@ export const projects = [
   },
 ];
 
-export const experience = [
+export type ExperienceEntry = {
+  role: string;
+  company: string;
+  location: string;
+  period: string;
+  type: "work" | "education";
+  highlights: string[];
+  /** Internal org placement, shown on the featured current role only. */
+  department?: string;
+  practice?: string;
+};
+
+export const experience: ExperienceEntry[] = [
   {
-    role: "Generative AI Engineer, Agentic & Applied AI (Full Stack)",
+    role: "Technical Consultant",
     company: "MOURI Tech Ltd (client: Stanley Black & Decker, USA)",
     location: "Hyderabad, India",
     period: "May 2024 - Present",
     type: "work",
+    department: "Applied AI",
+    practice: "Enterprise AI",
     highlights: [
       "Designed and shipped six AI applications now running in production, built on LLMs, agentic RAG and multi-agent systems with Azure OpenAI, for content, finance, manufacturing and medical teams.",
       "Built the RAG pipelines behind them using hybrid search over vector embeddings, which pushed retrieval accuracy up 42% and brought inference latency down 35%.",
